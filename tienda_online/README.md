@@ -47,10 +47,13 @@ pip install -r requirements.txt
 # 3. Aplicar migraciones
 python manage.py migrate
 
-# 4. Crear un superusuario (opcional, ya hay usuarios de prueba)
+# 4. Crear los usuarios de prueba (admin y cliente)
+python manage.py seed_demo
+
+# 5. Crear un superusuario propio (opcional)
 python manage.py createsuperuser
 
-# 5. Ejecutar el servidor
+# 6. Ejecutar el servidor
 python manage.py runserver
 ```
 
@@ -67,6 +70,9 @@ La base de datos es **SQLite** (`db.sqlite3`). El archivo está excluido en
 | Cliente | `cliente@tiendaonline.com` | `Cliente12345!` |
 
 > Estas credenciales son solo para el entorno local de la práctica.
+> La base `db.sqlite3` no se sube al repositorio, así que después de clonarlo
+> hay que ejecutar `python manage.py migrate` y `python manage.py seed_demo`
+> para crearlas. El comando es idempotente: se puede ejecutar varias veces.
 
 ---
 
