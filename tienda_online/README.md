@@ -249,6 +249,9 @@ tienda_online/
 
 <https://github.com/Hector9229/django.git>
 
-El PDF con las capturas de Swagger, obtención del token, consulta de datos
-personales y la prueba de edición sin contraseña se encuentra en la carpeta
-`docs/`.
+El PDF y el documento Word con las capturas de Swagger, obtención del token,
+consulta de datos personales y la prueba de edición sin contraseña se
+encuentran en la carpeta `docs/`:
+
+- `docs/Practica4_Django_JWT.pdf`
+- `docs/Practica4_Django_JWT.docx` (versión editable, sin enlace al repositorio)
